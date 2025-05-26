@@ -1,0 +1,197 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  background-image: linear-gradient(#fff, #EBDCFF);
+}
+
+#banner_section {
+  margin-bottom: 120px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 120px;
+  border-radius: 40px;
+  border: 2px solid #872bff10;
+  padding: 20px 30px;
+  background-image: url(../images/hero-bg.png);
+}
+
+.hero{
+  width: 50%;
+}
+#banner_section .left *{
+  margin-bottom: 20px;
+}
+#banner_section h1{ 
+      font-size: 70px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+#banner_section h1 span{
+    color: #f411cf;
+    display: block;
+  }
+#banner_section p{
+    color: #A8A8A8;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .btn{
+    color: #A8A8A8;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 32px ;
+    background: #872bff;
+    border: 2px solid #6f00ff10;
+    border-radius: 30px;
+    color: #fff;
+    margin-right: 20px ;
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .container{
+  width: 85%;
+  margin: 0 auto 120px;
+  }
+.tittle_font{
+    font-size: 24px;
+    font-weight: 500;
+    color: #F411CF;
+    margin: 0 auto 14px;
+     text-align: center;
+  }
+
+.tittle_line{
+    font-size: 44px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 auto 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+#service_section .box{
+  display: flex;
+  justify-content: space-between;
+}
+#service_section .model_box{
+  width: 340px;
+  text-align: center;
+background-color: #fff;
+padding: 100px 40px;
+border-radius: 30px;
+box-sizing: border-box;
+}
+
+#service_section .model_box *{
+  margin-bottom: 30px;
+}
+
+#service_section .model_box  h3{
+  font-size: 28px;
+  color: #000;
+}
+#service_section .model_box  p{
+  font-size: 18px;
+  color: #A8A8A8;
+}
+
+#asia_section .main{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 15px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+#asia_section .left{
+  width: 40%;
+  text-align: center;
+}
+#asia_section .right{
+  width: 60%;
+  text-align: left;
+}
+
+#asia_section .right h2{
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+#asia_section .right p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #A8A8A8;
+  margin: 10px 0 30px;
+}
+
+
+#explore_section .country_box{
+  text-align: center; 
+}
+#explore_section .common_country{
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px soldid #0e0e0e15;
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin: 12px;
+  text-transform: uppercase;
+}
+#explore_section {
+  text-align: center;
+}
+#explore_section .btn{
+  margin:20px 0;
+}
+
+#review_section .review_box {
+ padding: 24px;
+background: #fff;
+text-align: center;
+position: relative;
+margin-bottom: 50px;
+border-radius: 16px;
+ 
+}
+
+#review_section .review_box p{
+ font-size: 16px;
+ font-weight: 400;
+  color: #0E0E0E;
+  margin-bottom: 30px;
+}
+
+#review_section .review_box h2{
+ font-size: 20px;
+ font-weight: 500;
+  color: #0E0E0E;
+  margin-bottom: 20px;
+}
+#review_section .review_box img{
+position: absolute;
+bottom: 40px;
+right: 30px;
+opacity: 0.7;
+}
+
+#review_section .review_box h3{
+ font-size: 16px;
+ font-weight: 400;
+  color: #0E0E0E;
+}
+
+#footer_section {
+  background: #fff;
+  padding: 20px 0;
+}
