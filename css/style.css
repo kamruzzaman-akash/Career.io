@@ -1,6 +1,8 @@
 /* 
     font-family: "Azeret Mono", monospace;
     font-family: "Poppins", sans-serif;
+    font-family: "Azeret Mono", monospace;
+
 */
 
 /* ------- Common CSS ------- */
@@ -11,7 +13,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Azeret Mono", monospace;
 }
 
 body {
@@ -34,6 +36,7 @@ a {
     max-width: 1260px;
     margin: 0 auto;
     margin-bottom: 100px;
+    filter: drop-shadow(3px 3px 5px rgba(128, 128, 128, 0.2));
 }
 
 .main {
@@ -48,7 +51,6 @@ a {
     line-height: 64px;
     border-radius: 5px;
     background: linear-gradient(90deg, var(--c1, #FFA500), var(--c2, #FFD447) 51%, var(--c1, #FFA500)) var(--x, 0)/ 200%;
-
     color: #0D1321;
     font-size: 20px;
     font-weight: 600;
@@ -57,6 +59,7 @@ a {
 }
 
 .btn:hover {
+    transform: scale(1.05);
     --x: 100%;
     filter: drop-shadow(-3px -3px 5px rgba(128, 128, 128, 0.558));
 
@@ -95,6 +98,7 @@ header {
 
 header .container {
     margin-bottom: 0;
+    
 }
 
 header .main {
@@ -123,11 +127,11 @@ header .logo span {
 #hero_section .container {
     background: #E6EDF9;
     border-radius: 15px;
-    padding: 40px 0;
+    padding: 40px 60px;
 }
 
 #hero_section h1 {
-    font-size: 48px;
+    font-size: 43px;
     font-weight: 800;
     color: #0D1321;
     margin-bottom: 24px;
@@ -150,6 +154,7 @@ header .logo span {
     justify-content: space-between;
     background: #E6EDF9;
     padding: 48px;
+    border-radius: 16px;
 }
 
 #about_section .container .left {
@@ -198,10 +203,11 @@ header .logo span {
     border: 1px solid #0D1321;
     transition: 0.5s;
 }
+
 #inspiration_section .yt_video iframe:hover {
     transform: scale(1.05);
     filter: drop-shadow(2px 1px 10px #0000007a);
-   
+
 }
 
 
@@ -220,13 +226,16 @@ header .logo span {
     border-radius: 16px;
     filter: drop-shadow(5px 5px 5px rgba(128, 128, 128, 0.558));
     padding: 40px;
-    background-image: linear-gradient(#E6EDF9, #9DE5FF);
+    /* background-image: linear-gradient(#E6EDF9, #9DE5FF); */
     transition: .5s;
+    background: linear-gradient(360deg, var(--c2, #9DE5FF) 10%, var(--c1, #E6EDF9)) var(--x, 0) / 200%;
 }
 
 #target_section .box:hover {
     filter: drop-shadow(-5px -5px 10px rgba(128, 128, 128, 0.558));
     transform: translateY(-10px);
+    background: linear-gradient(360deg, var(--c2, #E6EDF9) 10%, var(--c1, #9DE5FF)) var(--x, 0) / 200%;
+
 }
 
 #target_section .box img {
@@ -246,7 +255,7 @@ header .logo span {
     font-size: 24px;
     font-weight: 500;
     color: #0D1321;
-    transition:  0.3s;
+    transition: 0.3s;
 }
 
 #target_section .box a:hover {
@@ -286,4 +295,9 @@ footer .container .left p {
 
 footer .container .right img {
     margin-left: 24px;
+    transition: 0.3s;
+}
+
+footer .container .right img:hover {
+    transform: scale(1.1);
 }

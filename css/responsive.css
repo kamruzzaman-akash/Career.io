@@ -30,13 +30,16 @@
     #hero_section p {
         font-size: 12px;
     }
-#about_section .container .left h1 {
-    font-size: 22px;}
+
+    #about_section .container .left h1 {
+        font-size: 22px;
+    }
 
     #about_section .container .left p {
-        font-size: 11px;}
+        font-size: 11px;
+    }
 
-        
+
 
 
 }
@@ -46,24 +49,25 @@
 
     .container {
         width: 90%;
+        
     }
 
     .btn {
-        width: 150px;
-        height: 45px;
-        line-height: 45px;
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
         font-size: 12px;
     }
 
     .tittle h1 {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 10px;
     }
 
     .tittle p {
         width: 300px;
         margin: 0 auto;
-        font-size: 11px;
+        font-size: 10px;
     }
 
     header {
@@ -80,7 +84,7 @@
     }
 
     #hero_section h1 {
-        font-size: 28px;
+        font-size: 22px;
         margin-bottom: 12px;
         margin-top: 20px;
     }
@@ -135,14 +139,19 @@
         text-align: center;
     }
 
-    footer .container .left p {
-        line-height: 12px;
-        font-size: 10px;
+    footer .container {
+        flex-direction: column;
     }
 
-    footer .container .right img {
-        margin-left: 10px;
-        width: 15px;
+    footer .container .left  {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    footer .container .right  {
+        width: 100%;
+        text-align: center;
     }
 
 }
