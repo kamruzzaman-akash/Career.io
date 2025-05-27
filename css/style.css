@@ -1,197 +1,289 @@
+/* 
+    font-family: "Azeret Mono", monospace;
+    font-family: "Poppins", sans-serif;
+*/
+
+/* ------- Common CSS ------- */
+
+
+
 * {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-body{
-  background-image: linear-gradient(#fff, #EBDCFF);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
-#banner_section {
-  margin-bottom: 120px;
-  width: 85%;
-  display: flex;
-  justify-content: space-between;
-  margin: 100px auto 120px;
-  border-radius: 40px;
-  border: 2px solid #872bff10;
-  padding: 20px 30px;
-  background-image: url(../images/hero-bg.png);
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(#E6E6FA, #B8E7FA);
 }
 
-.hero{
-  width: 50%;
-}
-#banner_section .left *{
-  margin-bottom: 20px;
-}
-#banner_section h1{ 
-      font-size: 70px;
-    font-weight: bold;
-    margin-top: 100px;
-}
-#banner_section h1 span{
-    color: #f411cf;
-    display: block;
-  }
-#banner_section p{
-    color: #A8A8A8;
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
 
-  .btn{
-    color: #A8A8A8;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 16px 32px ;
-    background: #872bff;
-    border: 2px solid #6f00ff10;
-    border-radius: 30px;
-    color: #fff;
-    margin-right: 20px ;
-    margin-top: 10px;
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.main {
+    display: flex;
+}
+
+.btn {
     display: inline-block;
-  }
+    width: 248px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, var(--c1, #FFA500), var(--c2, #FFD447) 51%, var(--c1, #FFA500)) var(--x, 0)/ 200%;
 
-  .container{
-  width: 85%;
-  margin: 0 auto 120px;
-  }
-.tittle_font{
+    color: #0D1321;
+    font-size: 20px;
+    font-weight: 600;
+    filter: drop-shadow(3px 3px 5px rgba(128, 128, 128, 0.558));
+    transition: 0.5s;
+}
+
+.btn:hover {
+    --x: 100%;
+    filter: drop-shadow(-3px -3px 5px rgba(128, 128, 128, 0.558));
+
+}
+
+.tittle {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.tittle h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0D1321;
+    margin-bottom: 24px;
+}
+
+.tittle p {
+    font-size: 16px;
+    color: #0D1321;
+    font-weight: 400;
+}
+
+/*  ------- Common CSS end ------- */
+
+
+
+
+/* ------- Header CSS start ------- */
+header {
+    background: #fff;
+    padding: 24px 0;
+    border-bottom: 1px solid #C6DBFF;
+    margin-bottom: 100px;
+}
+
+header .container {
+    margin-bottom: 0;
+}
+
+header .main {
+    justify-content: space-between;
+}
+
+header .logo {
+    color: #0D1321;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+header .logo span {
+    color: #FFA500;
+}
+
+/* ------- Header CSS end ------- */
+
+
+
+/* ------- hero CSS start ------- */
+#hero_section {
+    text-align: center;
+}
+
+#hero_section .container {
+    background: #E6EDF9;
+    border-radius: 15px;
+    padding: 40px 0;
+}
+
+#hero_section h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #0D1321;
+    margin-bottom: 24px;
+}
+
+#hero_section p {
+    font-size: 16px;
+    color: #0D1321;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+/* ------- hero CSS end ------- */
+
+
+/* ------- about CSS start ------- */
+
+#about_section .container {
+    display: flex;
+    justify-content: space-between;
+    background: #E6EDF9;
+    padding: 48px;
+}
+
+#about_section .container .left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about_section .container .left h1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #0D1321;
+    margin-bottom: 16px;
+}
+
+#about_section .container .left p {
+    font-size: 16px;
+    color: #0D1321;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+#about_section .container .right {
+    width: 40%;
+}
+
+#about_section .container .right img {
+    width: 100%;
+}
+
+/* ------- about CSS end ------- */
+
+
+/* ------- inspiration CSS start ------- */
+
+#inspiration_section .yt_video {
+    text-align: center;
+}
+
+#inspiration_section .yt_video iframe {
+    width: 966px;
+    height: 543px;
+    border-radius: 16px;
+    padding: 32px;
+    border: 1px solid #0D1321;
+    transition: 0.5s;
+}
+#inspiration_section .yt_video iframe:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(2px 1px 10px #0000007a);
+   
+}
+
+
+/* ------- inspiration CSS end ------- */
+
+
+/* ------- terget CSS start ------- */
+
+#target_section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#target_section .box {
+    width: 30%;
+    border-radius: 16px;
+    filter: drop-shadow(5px 5px 5px rgba(128, 128, 128, 0.558));
+    padding: 40px;
+    background-image: linear-gradient(#E6EDF9, #9DE5FF);
+    transition: .5s;
+}
+
+#target_section .box:hover {
+    filter: drop-shadow(-5px -5px 10px rgba(128, 128, 128, 0.558));
+    transform: translateY(-10px);
+}
+
+#target_section .box img {
+    margin-bottom: 24px;
+    transition: .5s;
+}
+
+#target_section .box h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0D1321;
+    margin-bottom: 26px;
+}
+
+#target_section .box a {
+    text-decoration: underline;
     font-size: 24px;
     font-weight: 500;
-    color: #F411CF;
-    margin: 0 auto 14px;
-     text-align: center;
-  }
-
-.tittle_line{
-    font-size: 44px;
-    font-weight: 600;
-    color: #000;
-    margin: 0 auto 60px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-#service_section .box{
-  display: flex;
-  justify-content: space-between;
-}
-#service_section .model_box{
-  width: 340px;
-  text-align: center;
-background-color: #fff;
-padding: 100px 40px;
-border-radius: 30px;
-box-sizing: border-box;
+    color: #0D1321;
+    transition:  0.3s;
 }
 
-#service_section .model_box *{
-  margin-bottom: 30px;
-}
-
-#service_section .model_box  h3{
-  font-size: 28px;
-  color: #000;
-}
-#service_section .model_box  p{
-  font-size: 18px;
-  color: #A8A8A8;
-}
-
-#asia_section .main{
-  display: flex;
-  justify-content: space-between;
-  background: #fff;
-  border-radius: 15px;
-  padding: 48px;
-  box-sizing: border-box;
-}
-#asia_section .left{
-  width: 40%;
-  text-align: center;
-}
-#asia_section .right{
-  width: 60%;
-  text-align: left;
-}
-
-#asia_section .right h2{
-  font-size: 32px;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 20px;
-}
-#asia_section .right p{
-  font-size: 16px;
-  font-weight: 400;
-  color: #A8A8A8;
-  margin: 10px 0 30px;
+#target_section .box a:hover {
+    color: #FFA500;
 }
 
 
-#explore_section .country_box{
-  text-align: center; 
-}
-#explore_section .common_country{
-  padding: 30px;
-  border-radius: 15px;
-  border: 1px soldid #0e0e0e15;
-  background: #fff;
-  display: inline-block;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 600;
-  color: #000;
-  margin: 12px;
-  text-transform: uppercase;
-}
-#explore_section {
-  text-align: center;
-}
-#explore_section .btn{
-  margin:20px 0;
+/* ------- terget CSS end ------- */
+
+/* ------- footer CSS start ------- */
+footer {
+    background: #fff;
+    padding: 32px 0;
 }
 
-#review_section .review_box {
- padding: 24px;
-background: #fff;
-text-align: center;
-position: relative;
-margin-bottom: 50px;
-border-radius: 16px;
- 
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
 }
 
-#review_section .review_box p{
- font-size: 16px;
- font-weight: 400;
-  color: #0E0E0E;
-  margin-bottom: 30px;
+footer .container .left {
+    width: 50%;
 }
 
-#review_section .review_box h2{
- font-size: 20px;
- font-weight: 500;
-  color: #0E0E0E;
-  margin-bottom: 20px;
-}
-#review_section .review_box img{
-position: absolute;
-bottom: 40px;
-right: 30px;
-opacity: 0.7;
+footer .container .right {
+    width: 50%;
+    text-align: right;
 }
 
-#review_section .review_box h3{
- font-size: 16px;
- font-weight: 400;
-  color: #0E0E0E;
+footer .container .left p {
+    line-height: 42px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Azeret Mono", monospace;
 }
 
-#footer_section {
-  background: #fff;
-  padding: 20px 0;
+footer .container .right img {
+    margin-left: 24px;
 }

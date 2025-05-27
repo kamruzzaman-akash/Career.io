@@ -1,0 +1,148 @@
+/* Responsive CSS for different devices */
+
+
+/* tablet device  */
+@media screen and (max-width: 1024px) {
+
+    .btn {
+        width: 200px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 17px;
+    }
+
+    .tittle p {
+        font-size: 16px;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+
+    #inspiration_section .yt_video iframe {
+        width: 90%;
+        height: 450px;
+    }
+
+    #hero_section h1 {
+        font-size: 36px;
+    }
+
+    #hero_section p {
+        font-size: 12px;
+    }
+#about_section .container .left h1 {
+    font-size: 22px;}
+
+    #about_section .container .left p {
+        font-size: 11px;}
+
+        
+
+
+}
+
+/* mobile device  up to 425px */
+@media screen and (max-width: 640px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .btn {
+        width: 150px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 12px;
+    }
+
+    .tittle h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .tittle p {
+        width: 300px;
+        margin: 0 auto;
+        font-size: 11px;
+    }
+
+    header {
+        margin-bottom: 25px;
+    }
+
+    header .logo {
+        font-size: 18px;
+    }
+
+
+    #hero_section .container {
+        padding: 20px;
+    }
+
+    #hero_section h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+        margin-top: 20px;
+    }
+
+    #hero_section p {
+        font-size: 12px;
+    }
+
+    #about_section .container {
+        flex-direction: column-reverse;
+        padding: 24px;
+        align-items: center;
+    }
+
+    #about_section .container .right {
+        width: 60%;
+    }
+
+    #about_section .container .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    #about_section .container .left h1 {
+        font-size: 18px;
+    }
+
+    #about_section .container .left p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    #about_section .container .left a {
+        margin: 0 auto;
+    }
+
+    #inspiration_section .yt_video iframe {
+        width: 90%;
+        height: auto;
+        border-radius: 16px;
+        padding: 14px;
+    }
+
+    #terget_section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #terget_section .box {
+        width: 75%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    footer .container .left p {
+        line-height: 12px;
+        font-size: 10px;
+    }
+
+    footer .container .right img {
+        margin-left: 10px;
+        width: 15px;
+    }
+
+}
