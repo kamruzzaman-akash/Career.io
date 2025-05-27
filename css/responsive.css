@@ -124,12 +124,12 @@
         padding: 14px;
     }
 
-    #terget_section .container {
+    #target_section .container {
         flex-direction: column;
         align-items: center;
     }
 
-    #terget_section .box {
+    #target_section .box {
         width: 75%;
         margin-bottom: 30px;
         text-align: center;
